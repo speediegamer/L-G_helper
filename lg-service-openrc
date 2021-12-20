@@ -1,0 +1,9 @@
+#!/sbin/openrc-run
+
+# Looking Glass OpenRC service
+
+echo Running lg_start.sh
+
+/bin/bash /usr/bin/lg_start.sh
+
+exit
