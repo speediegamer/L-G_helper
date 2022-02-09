@@ -3,7 +3,7 @@
 
     [Service]
     Type=idle
-    ExecStart=/bin/bash /usr/bin/lg_start.sh
+    ExecStart=/bin/sh touch /dev/shm/looking-glass && chown $VIRT_USER:kvm /dev/shm/looking-glass && chmod 660 /dev/shm/looking-glass
     
     [Install]
     WantedBy=graphical.target
