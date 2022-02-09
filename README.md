@@ -1,4 +1,4 @@
-# Looking Glass Helper
+# Looking Glass Helper for Gentoo/OpenRC
 
 This utility makes installation and setup of Looking Glass easy.. ..if you're on Gentoo Linux
 
