@@ -69,12 +69,6 @@ fi
 echo User $VIRT_USER selected. Press any key to continue:
 read ANY_KEY
 
-
-# Looking Glass requirements: /dev/shm/looking_glass needs to be created on startup
-echo "touch /dev/shm/looking-glass && chown $VIRT_USER:kvm /dev/shm/looking-glass && chmod 660 /dev/shm/looking-glass" > lg_start.sh
-
-# Create a OpenRC service to initialize the GPU on startup
-
 cp lg-service-openrc /etc/init.d/lg-service-openrc
 chmod 644 /etc/init.d/lg-service-openrc
 
