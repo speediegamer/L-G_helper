@@ -2,8 +2,6 @@
 
 # Looking Glass OpenRC service
 
-echo Running lg_start.sh
-
-/bin/bash /usr/bin/lg_start.sh
+ouch /dev/shm/looking-glass && chown $VIRT_USER:kvm /dev/shm/looking-glass && chmod 660 /dev/shm/looking-glass"
 
 exit
